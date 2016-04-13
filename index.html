@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Strona RWD</title>
+<link rel="stylesheet" href="style.css">
+<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+</head>
+<body onload="mapaStart()">
+<script type="text/javascript">
+function mapaStart()  
+{
+    var dymek = new google.maps.InfoWindow(); // zmienna globalna
+    var wspolrzedne = new google.maps.LatLng(50.256013,19.018493);
+    var opcjeMapy = {
+      zoom: 15,
+      center: wspolrzedne,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var mapa = new google.maps.Map(document.getElementById("mapka"), opcjeMapy);
+    dymek.setContent('FIRMA JUBILERSKA <strong>MAYA-GOLD</strong> MARIA CHRUŚCICKA <br>40-049 Katowice, ul.Kościuszki 11<br>');
+    dymek.setPosition(new google.maps.LatLng(50.255705,19.018358));
+    dymek.open(mapa);
+}   
+</script>
+
+
+<div id="container">
+ 
+	<!-- header -->
+	<header>
+		<div id="top_line"></div>
+	</header>
+	<div id="button_row"></div>
+	<div id="main_pic"></div>
+	<!-- main -->
+	<div id="columns_holder">
+	<section id="main_1">
+		<h1>RWD 1 tutorial</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum tempus mi, maximus volutpat urna sollicitudin vitae. Vivamus rutrum mi sit amet commodo rutrum. Suspendisse potenti. Sed a ullamcorper eros. Maecenas dapibus erat mi, a egestas ipsum cursus volutpat. Aliquam posuere mi at consectetur convallis. Cras vitae ligula eget leo ultrices hendrerit nec sed ex. Morbi at ipsum rhoncus, dictum elit in, consectetur lorem. Aliquam suscipit diam sit amet mauris luctus, a egestas magna pharetra. Donec laoreet viverra risus nec fermentum. Maecenas gravida lectus vel ante commodo bibendum. Donec ac pellentesque mi.</p>
+	</section>
+	
+	<section id="main_2">
+		<h1>RWD 1 tutorial</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum tempus mi, maximus volutpat urna sollicitudin vitae. Vivamus rutrum mi sit amet commodo rutrum. Suspendisse potenti. Sed a ullamcorper eros. Maecenas dapibus erat mi, a egestas ipsum cursus volutpat. Aliquam posuere mi at consectetur convallis. Cras vitae ligula eget leo ultrices hendrerit nec sed ex. Morbi at ipsum rhoncus, dictum elit in, consectetur lorem. Aliquam suscipit diam sit amet mauris luctus, a egestas magna pharetra. Donec laoreet viverra risus nec fermentum. Maecenas gravida lectus vel ante commodo bibendum. Donec ac pellentesque mi.</p>
+	</section>
+	
+	<section id="main_3">
+		<h1>RWD 1 tutorial</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum tempus mi, maximus volutpat urna sollicitudin vitae. Vivamus rutrum mi sit amet commodo rutrum. Suspendisse potenti. Sed a ullamcorper eros. Maecenas dapibus erat mi, a egestas ipsum cursus volutpat. Aliquam posuere mi at consectetur convallis. Cras vitae ligula eget leo ultrices hendrerit nec sed ex. Morbi at ipsum rhoncus, dictum elit in, consectetur lorem. Aliquam suscipit diam sit amet mauris luctus, a egestas magna pharetra. Donec laoreet viverra risus nec fermentum. Maecenas gravida lectus vel ante commodo bibendum. Donec ac pellentesque mi.</p>
+	</section>
+	</div>
+      <div id="mapka" style="width: 100%; height: 323px; border: 1px solid black; background: gray;">
+            <!-- tu będzie mapa -->
+          </div>
+          
+	<!-- footer -->
+<footer>
+<p>ProjektArtis © 2016</p>
+</footer>
+ 
+</div>
+ 
+</body>
+</html>
