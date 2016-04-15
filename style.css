@@ -38,7 +38,7 @@ footer{clear:both;color:#FFF;background:#121212;padding:15px 0 15px 30px;margin:
     font-weight: bold;
     border: none;
     color: white;
-    padding: 10px 26px;
+    padding: 0.8% 3%;
     text-align: center;
     text-decoration: none;
     font-size: 17px;
@@ -84,7 +84,7 @@ footer{clear:both;color:#FFF;background:#121212;padding:15px 0 15px 30px;margin:
 }
 @media (max-width: 1000px) and (min-width: 800px) {
 	.container {width:750px;}
-	aside {width:30%;}
+	aside {width:30%;}ale
 	#main_1 {width:91%;}
 	#main_2 {width:91%;}
 	#main_3 {width:91%;}

@@ -14,6 +14,8 @@ function mapaStart()
     var dymek = new google.maps.InfoWindow(); // zmienna globalna
     var wspolrzedne = new google.maps.LatLng(50.256013,19.018493);
     var opcjeMapy = {
+      draggable: false,
+      scrollwheel: false,
       zoom: 15,
       center: wspolrzedne,
       mapTypeId: google.maps.MapTypeId.ROADMAP
