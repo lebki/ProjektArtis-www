@@ -21,11 +21,11 @@ aside nav ul li a:hover{background:#212121;color:#FFF;}
 #button_row{background-image:url(images/button_bck.png);background-repeat:repeat ;top:120px;position:fixed;right:0px;left:0px;repeat-x;height:40px;}
 
 #logo{background-image:url(images/logo_min.png);height:123px;width:290px;top:0px;position:fixed;}
+#logo_holder{width:1024px;margin:0 auto 0 auto;overflow:hidden;}
 #top_line{background-image:url(images/back_top.png);top:0px;position:fixed;right:0px;left:0px;repeat-x;height:135px;}
 
 #columns_holder{background:#FFFFFF;width:1024px;margin:0 auto 0 auto;overflow:hidden;}
-#button_holder{width:1024px;margin:0 auto 0 auto;overflow:hidden;}
-#logo_holder{width:1024px;margin:0 auto 0 auto;overflow:hidden;}
+#button_holder{width:1024px;margin:0 auto 0 auto;overflow:hidden;clear: both;}
 
 #mapka{margin:0 auto 0 auto;width: 1024px; height: 323px; border: 1px solid black; background: gray;}
 
@@ -99,20 +99,26 @@ footer{clear:both;color:#FFF;background:#121212;padding:15px 0 15px 30px;margin:
 	#main_2 {width:91%;}
 	#main_3 {width:91%;}
 	#columns_holder{width:100%;}
-  #main_pic {width:500px;height:183px; margin:155px auto 0 auto;background-image:url(images/mob_main_photo.jpg); background-repeat:no-repeat}
+  #main_pic {clear: both;width:500px;height:183px; margin:155px auto 0 auto;background-image:url(images/mob_main_photo.jpg); background-repeat:no-repeat}
   #mapka {width: 100%;}
 }
+
 @media (max-width: 500px) {
 	.container {width:90%;}
 	aside,
 	#main_1 {width:91%;}
 	#main_2 {width:91%;}
 	#main_3 {width:91%;}
-	#main_pic {width:33%;}
-	#columns_holder{width:100%;}
-  #main_pic {width:0px;height:0px; margin:155px auto 0 auto;background-image:url(images/mob_main_photo.jpg); background-repeat:no-repeat}
+	#columns_holder{width:100%;clear: both;margin-top: 200px;}
+  #main_pic {display: none;}
   #mapka {width: 100%;}
+  #button_row{position: relative;clear: both;width: 100%;}
+  #button_holder{width: 100%;}
+  .button{text-align: center;width: 100%;clear:both;font-size: 27px;border-bottom: solid;border-width:1px;}
+  #logo_holder{width: 100%;margin: 0 auto 0 auto;}
+  #top_line{width: 100%;}
 }
+
 
 hr{border:20;width:80%;color:#C60;position:relative;top:auto;}
 h1{margin:0px;padding:0px;font-weight:bold;font-family:Verdana, Geneva, sans-serif;font-size:16px;color:#ffa200;}
