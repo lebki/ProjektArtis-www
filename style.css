@@ -32,7 +32,7 @@ aside nav ul li a:hover{background:#212121;color:#FFF;}
 
 #mapka{margin:0 auto 0 auto;width: 1024px; height: 323px; border: 1px solid black; background: gray;}
 
-#main_pic{visibility: hidden;width:1024px;height:375px; margin:155px auto 0 auto;background-image:url(images/main_photo.jpg); background-repeat:no-repeat;}
+#main_pic{visibility: hidden;width:1024px;height:291px; margin:155px auto 0 auto;background-image:url(images/main_photo.jpg); background-repeat:no-repeat;}
 #min_background{width:100%;height:375px; margin:115px auto 25px auto;background-image:url(images/min_background.png);background-repeat:repeat-x;}
 footer{clear:both;color:#FFF;background:#121212;padding:15px 0 15px 30px;margin:0 auto 0 auto;}
 
