@@ -28,7 +28,7 @@ aside nav ul li a:hover{background:#212121;color:#FFF;}
 
 #columns_holder{background:#FFFFFF;width:1024px;margin:0 auto 0 auto;overflow:hidden;}
 #house_colums_holder{width:50%;background:#FFFFFF;margin:0 auto 0 auto;float: left; overflow: hidden;}
-#columns_holder_bottom{background:#FFFFFF;width:1024px;margin:0 auto 0 auto;overflow:hidden;visibility: hidden;}
+#columns_holder_bottom{background:#FFFFFF;width:1024px;margin:0 auto 0 auto;overflow:hidden;visibility: hidden;clear:both;}
 #button_holder{width:1024px;margin:0 auto 0 auto;overflow:hidden;clear: both;}
 
 #mapka{margin:0 auto 0 auto;width: 1024px; height: 323px; border: 1px solid black; background: gray;}

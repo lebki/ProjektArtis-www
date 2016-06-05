@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Strona RWD</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="animate.css">
+<script src="/animations/lib/noframework.waypoints.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body onload="mapaStart()">
+  <script>
+  	$(window).scroll(function() {
+  		$('#main_house').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+500) {
+  				$(this).addClass("slideExpandUp");
+  			}
+  		});
+  	});
+    $(window).scroll(function() {
+  		$('#columns_holder_bottom').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+500) {
+  				$(this).addClass("slideExpandUp");
+  			}
+  		});
+  	});
+  </script>
+<script type="text/javascript">
+function mapaStart()
+{
+    var dymek = new google.maps.InfoWindow(); // zmienna globalna
+    var wspolrzedne = new google.maps.LatLng(50.256013,19.018493);
+    var opcjeMapy = {
+      draggable: false,
+      scrollwheel: false,
+      zoom: 15,
+      center: wspolrzedne,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var mapa = new google.maps.Map(document.getElementById("mapka"), opcjeMapy);
+    dymek.setContent('ProjektArtis');
+    dymek.setPosition(new google.maps.LatLng(50.255705,19.018358));
+    dymek.open(mapa);
+}
+</script>
+
+
+<div id="container">
+
+	<!-- header -->
+	<header>
+		<div id="top_line">
+		</div>
+	</header>
+	<div id="button_row">
+		<div id="button_holder">
+      <a href="index.html" target="_self"><button class="button button1">Główna</button></a>
+      <a href="#mapka" target="_self"><button class="button button1">Kontakt</button></a>
+      <a href="#columns_holder_bottom" target="_self"><button class="button button1">Nasze realizacje</button></a>
+			<a href="#main_house" target="_self"><button class="button button1" style="border-right:solid;border-width:1px;">Co oferujemy</button></a>
+		</div>
+	</div>
+	<div id="logo_holder">
+		<div id="logo"></div>
+	</div>
+
+  <!-- main -->
+  <div id="columns_holder_bottom" class="slideRight">
+        <section id="main_1">
+          <img src="images/realizacje/dom_1_1.jpg">
+        </section>
+        <section id="main_2">
+          <img src="images/realizacje/dom_1_2.jpg">
+        </section>
+        <section id="main_3">
+          <img src="images/realizacje/dom_1_2.jpg">
+        </section>
+  </div>
+	<!-- footer -->
+<footer>
+<p>ProjektArtis © 2016</p>
+</footer>
+
+</div>
+</body>
+</html>
