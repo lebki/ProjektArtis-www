@@ -93,6 +93,7 @@ p2{
 @media (min-width: 1100px) {
 	.container {width:1050px;}
 	aside {width:30%;}
+  #gallery {width:31%;}
 	#main_1 {width:31%;}
 	#main_2 {width:31%;}
 	#main_3 {width:31%;}
