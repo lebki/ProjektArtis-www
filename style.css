@@ -17,6 +17,7 @@ aside nav ul li a:hover{background:#212121;color:#FFF;}
 #main_1 {color: black;float:right;margin:0px 10px 0px 10px;word-wrap: break-word;background:#FFFFFF;}
 #main_2 {color: black;float:right;margin:0px 10px 0px 10px;word-wrap: break-word;background:#FFFFFF;}
 #main_3 {color: black;float:right;margin:0px 10px 0px 10px;word-wrap: break-word;background:#FFFFFF;}
+#gallery {float:left;margin:0px 10px 0px 10px;overflow: hidden;}
 #main_house {visibility: hidden;padding: 10px 10px 10px 10px;color: black;margin:5px auto 20px auto;word-wrap: break-word;background:#FFFFFF;overflow: hidden;}
 #main_photo{float:right; margin:0 auto 0 auto;}
 #button_row{background-image:url(images/button_bck.png);background-repeat:repeat ;top:120px;position:fixed;right:0px;left:0px;repeat-x;height:40px;z-index:1;}
@@ -103,6 +104,7 @@ p2{
 @media (max-width: 1100px) and (min-width: 1000px) {
 	.container {width:950px;}
 	aside {width:30%;}
+  #gallery {width:31%;}
 	#main_1 {width:31%;}
 	#main_2 {width:31%;}
 	#main_3 {width:31%;}
@@ -114,7 +116,8 @@ p2{
 @media (max-width: 1000px) and (min-width: 800px) {
 	.container {width:750px;}
 	aside {width:30%;}ale
-	#main_1 {width:91%;}
+  #gallery{width:91%;}
+  #main_1 {width:91%;}
 	#main_2 {width:91%;}
 	#main_3 {width:91%;}
 	#columns_holder{width:100%;}
@@ -126,6 +129,7 @@ p2{
 @media (max-width: 800px) and (min-width: 500px) {
 	.container {width:450px;}
 	aside,
+  #gallery{width:91%;}
 	#main_1 {width:91%;}
 	#main_2 {width:91%;}
 	#main_3 {width:91%;}
@@ -139,6 +143,7 @@ p2{
 @media (max-width: 500px) {
 	.container {width:90%;}
 	aside,
+  #gallery {width:91%;}
 	#main_1 {width:91%;}
 	#main_2 {width:91%;}
 	#main_3 {width:91%;}
