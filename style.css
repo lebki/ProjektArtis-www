@@ -14,9 +14,9 @@ aside nav ul li {margin-bottom:1px;}
 aside nav ul li a {display:block;text-decoration:none;color:#000;background:#FFC000;padding:8px 20px;}
 aside nav ul li a:hover{background:#212121;color:#FFF;}
 
-#main_1 {color: black;float:right;margin:0px 10px 0px 10px;word-wrap: break-word;background:#FFFFFF;}
-#main_2 {color: black;float:right;margin:0px 10px 0px 10px;word-wrap: break-word;background:#FFFFFF;}
-#main_3 {color: black;float:right;margin:0px 10px 0px 10px;word-wrap: break-word;background:#FFFFFF;}
+#main_1 {color: black;float:left;margin:0px 10px 0px 10px;word-wrap: break-word;background:#FFFFFF;}
+#main_2 {color: black;float:left;margin:0px 10px 0px 10px;word-wrap: break-word;background:#FFFFFF;}
+#main_3 {color: black;float:left;margin:0px 10px 0px 10px;word-wrap: break-word;background:#FFFFFF;}
 #gallery {float:left;margin:0px 10px 0px 10px;overflow: hidden;}
 #main_house {visibility: hidden;padding: 10px 10px 10px 10px;color: black;margin:5px auto 20px auto;word-wrap: break-word;background:#FFFFFF;overflow: hidden;}
 #main_photo{float:right; margin:0 auto 0 auto;}
@@ -35,7 +35,7 @@ aside nav ul li a:hover{background:#212121;color:#FFF;}
 
 #main_pic{visibility: hidden;width:1024px;height:291px; margin:155px auto 0 auto;background-image:url(images/main_photo.jpg); background-repeat:no-repeat;}
 #min_background{width:100%;height:375px; margin:115px auto 25px auto;background-image:url(images/min_background.png);background-repeat:repeat-x;}
-footer{clear:both;color:#FFF;background:#121212;padding:15px 0 15px 30px;margin:0 auto 0 auto;}
+footer{text-align: center;clear:both;color:#FFF;background:#121212;padding:15px 0 15px 30px;margin:0 auto 0 auto;}
 
 img {
     width: 100%;
