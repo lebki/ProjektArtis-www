@@ -5,9 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>ProjektArtis - Budujemy kompleksowo!</title>
 <link rel="stylesheet" href="style.css">
-<script async src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<link rel="stylesheet" href="animate.css">
+<script src="/animations/lib/noframework.waypoints.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 <body onload="mapaStart()">
+  <script>
+
+  	$(window).scroll(function() {
+  		$('#main_house').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+500) {
+  				$(this).addClass("slideExpandUp");
+  			}
+  		});
+  	});
+    $(window).scroll(function() {
+  		$('#columns_holder_bottom').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+500) {
+  				$(this).addClass("slideExpandUp");
+  			}
+  		});
+  	});
+  </script>
 <script type="text/javascript">
 function mapaStart()
 {
@@ -46,7 +72,7 @@ function mapaStart()
 		<div id="logo"></div>
 	</div>
 
-  <div id="main_pic"></div>
+  <div id="main_pic" class="slideRight"></div>
 	<!-- main -->
 	<div id="columns_holder">
 	<section id="main_1">
@@ -81,13 +107,13 @@ function mapaStart()
     <p class="highlight">Telefon:531 848 293 </p>
     <p>ul. 3 Maja 29 </p>
     <p>40-097 Katowice</p>
-    <p>biuro@projektartis.pl</p>
+    <p><a href="mailto:biuro@projektartis.pl">biuro@projektartis.pl</a></p>
 	</section>
 	</div>
   <div id="mapka">
       <!-- tu będzie mapa -->
   </div>
-    <div id="columns_holder_bottom">
+    <div id="columns_holder_bottom" class="animate">
 
           <section id="main_2">
         		<h2>Realizacja 2</h2>
@@ -126,7 +152,7 @@ function mapaStart()
                 </a>
                 </section>
     </div>
-    <div id="main_house">
+    <div id="main_house" class="animate">
       <div id="house_colums_holder">
       <h1>Projektujemy i budujemy domy</h1><hr>
       <h3>Jesteśmy generalnym wykonawcą inwestycji związanych z budową domów.</h3>
