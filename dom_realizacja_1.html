@@ -6,11 +6,57 @@
 <title>ProjektArtis - Budujemy kompleksowo!</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="animate.css">
-<link rel="stylesheet" href="lightbox/css/lightbox.min.css">
-
+<script src="/animations/lib/noframework.waypoints.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
-<body>
+<body onload="mapaStart()">
+  <script>
+
+  	$(window).scroll(function() {
+  		$('#main_house').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+500) {
+  				$(this).addClass("slideExpandUp");
+  			}
+  		});
+  	});
+    $(window).scroll(function() {
+  		$('#columns_holder_bottom').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+500) {
+  				$(this).addClass("slideExpandUp");
+  			}
+  		});
+  	});
+  </script>
+<script type="text/javascript">
+function mapaStart()
+{
+    var dymek = new google.maps.InfoWindow(); // zmienna globalna
+    var wspolrzedne = new google.maps.LatLng(50.256013,19.018493);
+    var opcjeMapy = {
+      draggable: false,
+      scrollwheel: false,
+      zoom: 15,
+      center: wspolrzedne,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var mapa = new google.maps.Map(document.getElementById("mapka"), opcjeMapy);
+    dymek.setContent('ProjektArtis');
+    dymek.setPosition(new google.maps.LatLng(50.255705,19.018358));
+    dymek.open(mapa);
+}
+</script>
+
+
 <div id="container">
+
+	<!-- header -->
 	<header>
 		<div id="top_line">
 		</div>
@@ -30,18 +76,17 @@
   <div id="main_pic" class="slideRight"></div>
 	<!-- main -->
 	<div id="columns_holder">
-		  <a class="example-image-link" href="images/realizacje/projekty/1.jpg" data-lightbox="example-set"><div id="gallery"><img src="images/realizacje/projekty/1.jpg"></div></a>
-      <a class="example-image-link" href="images/realizacje/projekty/2.jpg" data-lightbox="example-set"><div id="gallery"><img src="images/realizacje/projekty/2.jpg"></div></a>
-      <a class="example-image-link" href="images/realizacje/projekty/3.jpg" data-lightbox="example-set"><div id="gallery"><img src="images/realizacje/projekty/3.jpg"></div></a>
-      <a class="example-image-link" href="images/realizacje/projekty/4.jpg" data-lightbox="example-set"><div id="gallery"><img src="images/realizacje/projekty/4.jpg"></div></a>
-      <a class="example-image-link" href="images/realizacje/projekty/5.jpg" data-lightbox="example-set"><div id="gallery"><img src="images/realizacje/projekty/5.jpg"></div></a>
-      <a class="example-image-link" href="images/realizacje/projekty/6.jpg" data-lightbox="example-set"><div id="gallery"><img src="images/realizacje/projekty/6.jpg"></div></a>
+		  <div id="gallery"><img src="images/realizacje/projekty/1.jpg"></div>
+      <div id="gallery"><img src="images/realizacje/projekty/2.jpg"></div>
+      <div id="gallery"><img src="images/realizacje/projekty/3.jpg"></div>
+      <div id="gallery"><img src="images/realizacje/projekty/4.jpg"></div>
+      <div id="gallery"><img src="images/realizacje/projekty/5.jpg"></div>
+      <div id="gallery"><img src="images/realizacje/projekty/6.jpg"></div>
   </div>
 <footer>
 <p>ProjektArtis © 2016</p>
 </footer>
 
 </div>
-<script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
